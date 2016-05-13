@@ -47,7 +47,7 @@ $(function(){ //페이지가 다 로딩된 후에 jquery를 읽게 해야 한다
           url: "/home/reply_write",
           data: { content: post_content, id_of_post: post_id},
             success: function(){
-              $( "#reply_" + post_id).append("<p>" + post_content +"</p>" );
+              $("#reply_" + post_id).append("<p>" + post_content +"</p>" );
               $("#content_" + post_id).val('');
             
             },
